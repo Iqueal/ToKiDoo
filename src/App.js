@@ -31,10 +31,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={ <>
           <AddTodo addTodo={ addTodo } />
-          <Todos todos={ todos } onDelete={ onDelete } />
+          <Todos todos={ todos } onDelete={ onDelete }/>
         </> }>
         </Route>
-        <Route path="/about" exact element={ <About /> } />
+        <Route exact path="/about" element={ <About /> } />
       </Routes>
       <Footer />
     </Router>
